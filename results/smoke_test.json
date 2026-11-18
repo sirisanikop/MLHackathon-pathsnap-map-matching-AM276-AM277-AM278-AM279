@@ -1,0 +1,73 @@
+{
+ "checks": {
+  "trips_listed": true,
+  "missing_candidates_handled": true,
+  "all_ids_valid": true,
+  "no_reference_leak": true,
+  "unknown_trip_404": true
+ },
+ "health": {
+  "status": "ok",
+  "model": "LightGBM LambdaRank (v2 features)",
+  "partition": "smoke_partition"
+ },
+ "00000009": {
+  "seconds": 0.54,
+  "n_observations": 1049,
+  "n_matched": 1049,
+  "route_arcs": 435,
+  "route_ids_valid": true,
+  "route_consecutive_connected": 1.0,
+  "hmm_segments": 1,
+  "obs_count_matches_file": true,
+  "no_reference_fields": true,
+  "evaluation_available": true,
+  "acc_final": 0.9418493803622497,
+  "acc_hmm": 0.9304099142040038,
+  "acc_cls": 0.9056244041944709
+ },
+ "00000077": {
+  "seconds": 1.15,
+  "n_observations": 3911,
+  "n_matched": 3911,
+  "route_arcs": 312,
+  "route_ids_valid": true,
+  "route_consecutive_connected": 1.0,
+  "hmm_segments": 1,
+  "obs_count_matches_file": true,
+  "no_reference_fields": true,
+  "evaluation_available": true,
+  "acc_final": 0.9575556123753516,
+  "acc_hmm": 0.9030938378931219,
+  "acc_cls": 0.8504218869854258
+ },
+ "99999999": {
+  "seconds": 0.08,
+  "n_observations": 262,
+  "n_matched": 162,
+  "route_arcs": 71,
+  "route_ids_valid": true,
+  "route_consecutive_connected": 0.9857142857142858,
+  "hmm_segments": 2,
+  "obs_count_matches_file": true,
+  "no_reference_fields": true,
+  "evaluation_available": true,
+  "acc_final": 0.9747899159663865,
+  "acc_hmm": 0.9747899159663865,
+  "acc_cls": 0.957983193277311
+ },
+ "server_log_tail": [
+  "2026-11-18 13:25:30,997 | INFO | POST /predict from 127.0.0.1 -> 200 in 1145 ms",
+  "INFO:     127.0.0.1:53115 - \"POST /predict HTTP/1.1\" 200 OK",
+  "2026-11-18 13:25:31,002 | INFO | PREDICT request trip=99999999",
+  "2026-11-18 13:25:31,074 | INFO | PREDICT done trip=99999999 obs=262 route_arcs=71 acc_final=0.9748 acc_hmm=0.9748 acc_cls=0.9580 total=0.06s",
+  "2026-11-18 13:25:31,075 | INFO | POST /predict from 127.0.0.1 -> 200 in 74 ms",
+  "INFO:     127.0.0.1:53120 - \"POST /predict HTTP/1.1\" 200 OK",
+  "2026-11-18 13:25:31,078 | INFO | POST /predict from 127.0.0.1 -> 404 in 1 ms",
+  "INFO:     127.0.0.1:53121 - \"POST /predict HTTP/1.1\" 404 Not Found",
+  "INFO:     Shutting down",
+  "INFO:     Waiting for application shutdown.",
+  "INFO:     Application shutdown complete.",
+  "INFO:     Finished server process [1012]"
+ ]
+}

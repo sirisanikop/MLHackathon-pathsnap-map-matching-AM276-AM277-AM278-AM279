@@ -1,0 +1,97 @@
+2026-11-18 12:34:31,779 | INFO | model loaded: lgbm_v2_untuned | hmm={'beta': 20.0, 'w_emit': 0.25, 'back_tol_m': 15.0, 'back_pen_m': 60.0, 'uturn_pen': 0.0, 'gap_s': 60.0, 'top_m': 24, 'realign_max_m': 80.0} | realign=True | partition=student_test
+2026-11-18 12:34:33,488 | INFO | HEAD / from 127.0.0.1 -> 404 in 0 ms
+2026-11-18 12:34:33,505 | INFO | GET / from 127.0.0.1 -> 404 in 0 ms
+2026-11-18 12:34:33,596 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 in 0 ms
+2026-11-18 12:35:01,192 | INFO | GET /health from 127.0.0.1 -> 200 in 2 ms
+2026-11-18 12:35:01,193 | INFO | GET /trips from 127.0.0.1 -> 200 in 1 ms
+2026-11-18 12:35:01,195 | INFO | PREDICT request trip=00000000
+2026-11-18 12:35:01,687 | INFO | PREDICT done trip=00000000 obs=2503 route_arcs=198 acc_final=0.9928 acc_hmm=0.9840 acc_cls=0.9672 total=0.44s
+2026-11-18 12:35:01,693 | INFO | POST /predict from 127.0.0.1 -> 200 in 500 ms
+2026-11-18 12:35:01,696 | INFO | PREDICT request trip=00000007
+2026-11-18 12:35:01,877 | INFO | PREDICT done trip=00000007 obs=1354 route_arcs=121 acc_final=1.0000 acc_hmm=0.9993 acc_cls=0.9882 total=0.16s
+2026-11-18 12:35:01,881 | INFO | POST /predict from 127.0.0.1 -> 200 in 185 ms
+2026-11-18 12:35:01,883 | INFO | PREDICT request trip=00000009
+2026-11-18 12:35:02,375 | INFO | PREDICT done trip=00000009 obs=1049 route_arcs=435 acc_final=0.9418 acc_hmm=0.9304 acc_cls=0.9056 total=0.46s
+2026-11-18 12:35:02,381 | INFO | POST /predict from 127.0.0.1 -> 200 in 499 ms
+2026-11-18 12:35:02,382 | INFO | PREDICT request trip=00000040
+2026-11-18 12:35:02,992 | INFO | PREDICT done trip=00000040 obs=2995 route_arcs=319 acc_final=0.9913 acc_hmm=0.9813 acc_cls=0.9636 total=0.55s
+2026-11-18 12:35:03,001 | INFO | POST /predict from 127.0.0.1 -> 200 in 619 ms
+2026-11-18 12:35:03,003 | INFO | PREDICT request trip=00000052
+2026-11-18 12:35:03,091 | INFO | PREDICT done trip=00000052 obs=262 route_arcs=93 acc_final=1.0000 acc_hmm=0.9962 acc_cls=0.9885 total=0.08s
+2026-11-18 12:35:03,093 | INFO | POST /predict from 127.0.0.1 -> 200 in 90 ms
+2026-11-18 12:35:03,094 | INFO | PREDICT request trip=00000056
+2026-11-18 12:35:04,677 | INFO | PREDICT done trip=00000056 obs=3958 route_arcs=1329 acc_final=0.9903 acc_hmm=0.9855 acc_cls=0.9491 total=1.43s
+2026-11-18 12:35:04,689 | INFO | POST /predict from 127.0.0.1 -> 200 in 1595 ms
+2026-11-18 12:35:04,692 | INFO | PREDICT request trip=00000065
+2026-11-18 12:35:05,099 | INFO | PREDICT done trip=00000065 obs=768 route_arcs=151 acc_final=0.9792 acc_hmm=0.9089 acc_cls=0.9023 total=0.39s
+2026-11-18 12:35:05,102 | INFO | POST /predict from 127.0.0.1 -> 200 in 411 ms
+2026-11-18 12:35:05,104 | INFO | PREDICT request trip=00000076
+2026-11-18 12:35:06,633 | INFO | PREDICT done trip=00000076 obs=1486 route_arcs=386 acc_final=0.9966 acc_hmm=0.9872 acc_cls=0.9616 total=1.49s
+2026-11-18 12:35:06,640 | INFO | POST /predict from 127.0.0.1 -> 200 in 1536 ms
+2026-11-18 12:35:06,642 | INFO | PREDICT request trip=00000077
+2026-11-18 12:35:07,771 | INFO | PREDICT done trip=00000077 obs=3911 route_arcs=312 acc_final=0.9576 acc_hmm=0.9031 acc_cls=0.8504 total=1.05s
+2026-11-18 12:35:07,777 | INFO | POST /predict from 127.0.0.1 -> 200 in 1136 ms
+2026-11-18 12:35:07,779 | INFO | PREDICT request trip=00000091
+2026-11-18 12:35:08,158 | INFO | PREDICT done trip=00000091 obs=874 route_arcs=232 acc_final=0.9565 acc_hmm=0.9382 acc_cls=0.9245 total=0.36s
+2026-11-18 12:35:08,162 | INFO | POST /predict from 127.0.0.1 -> 200 in 384 ms
+2026-11-18 12:35:12,407 | INFO | GET /health from 127.0.0.1 -> 200 in 0 ms
+2026-11-18 12:35:12,413 | INFO | GET /trips from 127.0.0.1 -> 200 in 1 ms
+2026-11-18 12:35:12,416 | INFO | OPTIONS /predict from 127.0.0.1 -> 200 in 0 ms
+2026-11-18 12:35:12,418 | INFO | PREDICT request trip=00000077
+2026-11-18 12:35:13,525 | INFO | PREDICT done trip=00000077 obs=3911 route_arcs=312 acc_final=0.9576 acc_hmm=0.9031 acc_cls=0.8504 total=1.03s
+2026-11-18 12:35:13,533 | INFO | POST /predict from 127.0.0.1 -> 200 in 1116 ms
+2026-11-18 12:38:05,599 | INFO | GET /docs from 127.0.0.1 -> 200 in 0 ms
+2026-11-18 12:38:05,770 | INFO | GET /openapi.json from 127.0.0.1 -> 200 in 5 ms
+2026-11-18 12:38:11,693 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 in 0 ms
+2026-11-18 12:38:17,454 | INFO | PREDICT request trip=00000009
+2026-11-18 12:38:18,718 | INFO | PREDICT done trip=00000009 obs=1049 route_arcs=435 acc_final=0.9418 acc_hmm=0.9304 acc_cls=0.9056 total=1.13s
+2026-11-18 12:38:18,726 | INFO | POST /predict from 127.0.0.1 -> 200 in 1273 ms
+2026-11-18 12:48:14,062 | INFO | model loaded: lgbm_v2_untuned | hmm={'beta': 20.0, 'w_emit': 0.25, 'back_tol_m': 15.0, 'back_pen_m': 60.0, 'uturn_pen': 0.0, 'gap_s': 60.0, 'top_m': 24, 'realign_max_m': 80.0, 'bridge': True} | realign=True | partition=smoke_partition
+2026-11-18 12:48:14,322 | INFO | GET /health from 127.0.0.1 -> 200 in 2 ms
+2026-11-18 12:48:14,324 | INFO | GET /health from 127.0.0.1 -> 200 in 1 ms
+2026-11-18 12:48:14,326 | INFO | GET /trips from 127.0.0.1 -> 200 in 1 ms
+2026-11-18 12:48:14,330 | INFO | PREDICT request trip=00000009
+2026-11-18 12:48:15,039 | INFO | PREDICT done trip=00000009 obs=1049 route_arcs=435 acc_final=0.9418 acc_hmm=0.9304 acc_cls=0.9056 total=0.66s
+2026-11-18 12:48:15,046 | INFO | POST /predict from 127.0.0.1 -> 200 in 718 ms
+2026-11-18 12:48:15,050 | INFO | PREDICT request trip=00000077
+2026-11-18 12:48:16,756 | INFO | PREDICT done trip=00000077 obs=3911 route_arcs=312 acc_final=0.9576 acc_hmm=0.9031 acc_cls=0.8504 total=1.58s
+2026-11-18 12:48:16,763 | INFO | POST /predict from 127.0.0.1 -> 200 in 1714 ms
+2026-11-18 12:48:16,771 | INFO | PREDICT request trip=99999999
+2026-11-18 12:48:16,894 | INFO | PREDICT done trip=99999999 obs=262 route_arcs=71 acc_final=0.9748 acc_hmm=0.9748 acc_cls=0.9580 total=0.11s
+2026-11-18 12:48:16,897 | INFO | POST /predict from 127.0.0.1 -> 200 in 127 ms
+2026-11-18 12:48:16,904 | INFO | POST /predict from 127.0.0.1 -> 404 in 4 ms
+2026-11-18 12:48:30,481 | INFO | model loaded: lgbm_v2_untuned | hmm={'beta': 20.0, 'w_emit': 0.25, 'back_tol_m': 15.0, 'back_pen_m': 60.0, 'uturn_pen': 0.0, 'gap_s': 60.0, 'top_m': 24, 'realign_max_m': 80.0, 'bridge': True} | realign=True | partition=student_test
+2026-11-18 12:48:31,266 | INFO | HEAD / from 127.0.0.1 -> 404 in 1 ms
+2026-11-18 12:48:31,288 | INFO | GET / from 127.0.0.1 -> 404 in 1 ms
+2026-11-18 12:48:31,345 | INFO | GET /favicon.ico from 127.0.0.1 -> 404 in 0 ms
+2026-11-18 12:48:52,627 | INFO | GET /trips from 127.0.0.1 -> 200 in 13 ms
+2026-11-18 12:48:52,635 | INFO | PREDICT request trip=00000000
+2026-11-18 12:48:53,307 | INFO | PREDICT done trip=00000000 obs=2503 route_arcs=198 acc_final=0.9928 acc_hmm=0.9840 acc_cls=0.9672 total=0.62s
+2026-11-18 12:48:53,324 | INFO | POST /predict from 127.0.0.1 -> 200 in 695 ms
+2026-11-18 12:48:53,332 | INFO | PREDICT request trip=00000007
+2026-11-18 12:48:53,578 | INFO | PREDICT done trip=00000007 obs=1354 route_arcs=121 acc_final=1.0000 acc_hmm=0.9993 acc_cls=0.9882 total=0.21s
+2026-11-18 12:48:53,582 | INFO | POST /predict from 127.0.0.1 -> 200 in 253 ms
+2026-11-18 12:48:53,585 | INFO | PREDICT request trip=00000009
+2026-11-18 12:48:54,234 | INFO | PREDICT done trip=00000009 obs=1049 route_arcs=435 acc_final=0.9418 acc_hmm=0.9304 acc_cls=0.9056 total=0.62s
+2026-11-18 12:48:54,241 | INFO | POST /predict from 127.0.0.1 -> 200 in 657 ms
+2026-11-18 12:48:54,244 | INFO | PREDICT request trip=00000040
+2026-11-18 12:48:55,114 | INFO | PREDICT done trip=00000040 obs=2995 route_arcs=319 acc_final=0.9913 acc_hmm=0.9813 acc_cls=0.9636 total=0.80s
+2026-11-18 12:48:55,133 | INFO | POST /predict from 127.0.0.1 -> 200 in 890 ms
+2026-11-18 12:48:55,137 | INFO | PREDICT request trip=00000052
+2026-11-18 12:48:55,268 | INFO | PREDICT done trip=00000052 obs=262 route_arcs=93 acc_final=1.0000 acc_hmm=0.9962 acc_cls=0.9885 total=0.10s
+2026-11-18 12:48:55,278 | INFO | POST /predict from 127.0.0.1 -> 200 in 142 ms
+2026-11-18 12:48:55,284 | INFO | PREDICT request trip=00000056
+2026-11-18 12:48:57,622 | INFO | PREDICT done trip=00000056 obs=3958 route_arcs=1329 acc_final=0.9903 acc_hmm=0.9855 acc_cls=0.9491 total=2.16s
+2026-11-18 12:48:57,639 | INFO | POST /predict from 127.0.0.1 -> 200 in 2358 ms
+2026-11-18 12:48:57,643 | INFO | PREDICT request trip=00000065
+2026-11-18 12:48:58,134 | INFO | PREDICT done trip=00000065 obs=768 route_arcs=151 acc_final=0.9792 acc_hmm=0.9089 acc_cls=0.9023 total=0.47s
+2026-11-18 12:48:58,137 | INFO | POST /predict from 127.0.0.1 -> 200 in 496 ms
+2026-11-18 12:48:58,141 | INFO | PREDICT request trip=00000076
+2026-11-18 12:49:00,048 | INFO | PREDICT done trip=00000076 obs=1486 route_arcs=386 acc_final=0.9966 acc_hmm=0.9872 acc_cls=0.9616 total=1.86s
+2026-11-18 12:49:00,055 | INFO | POST /predict from 127.0.0.1 -> 200 in 1916 ms
+2026-11-18 12:49:00,061 | INFO | PREDICT request trip=00000077
+2026-11-18 12:49:01,650 | INFO | PREDICT done trip=00000077 obs=3911 route_arcs=312 acc_final=0.9576 acc_hmm=0.9031 acc_cls=0.8504 total=1.50s
+2026-11-18 12:49:01,657 | INFO | POST /predict from 127.0.0.1 -> 200 in 1598 ms
+2026-11-18 12:49:01,660 | INFO | PREDICT request trip=00000091
+2026-11-18 12:49:02,133 | INFO | PREDICT done trip=00000091 obs=874 route_arcs=232 acc_final=0.9565 acc_hmm=0.9382 acc_cls=0.9245 total=0.44s
+2026-11-18 12:49:02,138 | INFO | POST /predict from 127.0.0.1 -> 200 in 479 ms
