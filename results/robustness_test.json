@@ -1,0 +1,179 @@
+{
+ "e01_single_fix": {
+  "ok": true,
+  "n_obs": 1,
+  "matched": 1,
+  "route_arcs": 1,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": null,
+  "seconds": 0.022
+ },
+ "e02_two_fixes": {
+  "ok": true,
+  "n_obs": 2,
+  "matched": 2,
+  "route_arcs": 1,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 1.0,
+  "seconds": 0.017
+ },
+ "e03_three_fixes": {
+  "ok": true,
+  "n_obs": 3,
+  "matched": 3,
+  "route_arcs": 1,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 1.0,
+  "seconds": 0.017
+ },
+ "e04_no_candidates": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 0,
+  "route_arcs": 0,
+  "evaluation_available": false,
+  "reason": "no GPS observation lies within 60 m of the reference route",
+  "top1_final": null,
+  "continuity_final": null,
+  "seconds": 0.008
+ },
+ "e05_huge_time_gap": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.9616858237547893,
+  "seconds": 0.093
+ },
+ "e06_stationary": {
+  "ok": true,
+  "n_obs": 240,
+  "matched": 240,
+  "route_arcs": 46,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.9707112970711297,
+  "seconds": 0.073
+ },
+ "e07_heavy_noise": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 107,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 0.9881422924901185,
+  "continuity_final": 0.9272030651340997,
+  "seconds": 0.096
+ },
+ "e08_coarse_15s": {
+  "ok": true,
+  "n_obs": 18,
+  "matched": 18,
+  "route_arcs": 92,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.11764705882352941,
+  "seconds": 0.038
+ },
+ "e09_reversed": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 94,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 0.0,
+  "continuity_final": 0.9808429118773946,
+  "seconds": 0.091
+ },
+ "e10_unsorted_time": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.9578544061302682,
+  "seconds": 0.092
+ },
+ "e11_duplicate_time": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.9616858237547893,
+  "seconds": 0.092
+ },
+ "e12_no_route_file": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": false,
+  "reason": "no private reference route on server for this trip",
+  "top1_final": null,
+  "continuity_final": null,
+  "seconds": 0.085
+ },
+ "e13_integer_format": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": true,
+  "reason": null,
+  "top1_final": 1.0,
+  "continuity_final": 0.9616858237547893,
+  "seconds": 0.094
+ },
+ "e14_empty_route": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": false,
+  "reason": "no private reference route on server for this trip",
+  "top1_final": null,
+  "continuity_final": null,
+  "seconds": 0.085
+ },
+ "e15_empty_track": {
+  "ok": true,
+  "n_obs": 0,
+  "matched": 0,
+  "route_arcs": 0,
+  "evaluation_available": false,
+  "reason": "the trip has no GPS observations",
+  "top1_final": null,
+  "continuity_final": null,
+  "seconds": 0.003
+ },
+ "e16_bad_route_ids": {
+  "ok": true,
+  "n_obs": 262,
+  "matched": 262,
+  "route_arcs": 93,
+  "evaluation_available": false,
+  "reason": "reference route contains arc ids outside this trip's road network",
+  "top1_final": null,
+  "continuity_final": null,
+  "seconds": 0.086
+ },
+ "all_ok": true
+}
