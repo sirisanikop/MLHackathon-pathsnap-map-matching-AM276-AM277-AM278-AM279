@@ -1,0 +1,92 @@
+{
+ "n_scored_fixes": 19135,
+ "predictions_identical_without_route_files": true,
+ "errors": {
+  "cls_pred": {
+   "n_errors": 1712,
+   "error_rate": 0.08946955840083616,
+   "adjacent_on_route": 382,
+   "reverse_direction": 568,
+   "other_on_route": 88,
+   "off_route": 674,
+   "no_prediction": 0
+  },
+  "hmm_pred": {
+   "n_errors": 912,
+   "error_rate": 0.04766135354063235,
+   "adjacent_on_route": 345,
+   "reverse_direction": 312,
+   "other_on_route": 25,
+   "off_route": 230,
+   "no_prediction": 0
+  },
+  "final_pred": {
+   "n_errors": 484,
+   "error_rate": 0.025293963940423308,
+   "adjacent_on_route": 83,
+   "reverse_direction": 150,
+   "other_on_route": 15,
+   "off_route": 236,
+   "no_prediction": 0
+  }
+ },
+ "label_noise": {
+  "moving_scored_fixes": 16354,
+  "label_against_motion": 257,
+  "share": 0.01571480983245689,
+  "final_reverse_direction_errors_while_moving": 66,
+  "of_which_label_against_motion": 39
+ },
+ "per_trip": [
+  {
+   "trip": "00000000",
+   "final_top1": 0.98921294446664,
+   "label_against_motion_share": 0.0028937577511368336
+  },
+  {
+   "trip": "00000007",
+   "final_top1": 1.0,
+   "label_against_motion_share": 0.011589403973509934
+  },
+  {
+   "trip": "00000009",
+   "final_top1": 0.9332697807435653,
+   "label_against_motion_share": 0.028128031037827354
+  },
+  {
+   "trip": "00000040",
+   "final_top1": 0.988313856427379,
+   "label_against_motion_share": 0.008002910149145144
+  },
+  {
+   "trip": "00000052",
+   "final_top1": 1.0,
+   "label_against_motion_share": 0.0
+  },
+  {
+   "trip": "00000056",
+   "final_top1": 0.9801678108314263,
+   "label_against_motion_share": 0.007261968800430339
+  },
+  {
+   "trip": "00000065",
+   "final_top1": 0.9752604166666666,
+   "label_against_motion_share": 0.04640718562874251
+  },
+  {
+   "trip": "00000076",
+   "final_top1": 0.9899057873485868,
+   "label_against_motion_share": 0.0
+  },
+  {
+   "trip": "00000077",
+   "final_top1": 0.9483508054206086,
+   "label_against_motion_share": 0.05384957721406319
+  },
+  {
+   "trip": "00000091",
+   "final_top1": 0.9565217391304348,
+   "label_against_motion_share": 0.0078125
+  }
+ ]
+}
