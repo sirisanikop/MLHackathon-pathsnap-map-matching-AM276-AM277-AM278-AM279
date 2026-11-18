@@ -1,0 +1,52 @@
+{
+ "model": "baseline",
+ "config": {
+  "family": "Geometric heuristic (not trained)",
+  "sigma_m": 10.0,
+  "rule": "nearest arc by point-segment distance"
+ },
+ "cv_mean": {
+  "obs_top1": 0.553346750544865,
+  "obs_macro_f1_trip": 0.39930599258148514,
+  "obs_weighted_f1_trip": 0.6354977585930882,
+  "obs_top1_trip_mean": 0.570713113315888,
+  "obs_logloss": 1.0723472268938115,
+  "miss_rate": 0.00881276799702282,
+  "n_obs": 12409.0,
+  "cand_precision_pos": 0.3407649344618699,
+  "cand_recall_pos": 0.8749771240609908,
+  "cand_f1_pos": 0.489145337545266,
+  "cand_macro_f1": 0.6791596505255086,
+  "cand_logloss": 0.547116582968792
+ },
+ "cv_std": {
+  "obs_top1": 0.029890999051229127,
+  "obs_macro_f1_trip": 0.04206929666411116,
+  "obs_weighted_f1_trip": 0.04708466202274175,
+  "obs_top1_trip_mean": 0.04317017698883794,
+  "obs_logloss": 0.10801340881227699,
+  "miss_rate": 0.014455088404120705,
+  "n_obs": 1673.823616752972,
+  "cand_precision_pos": 0.038162266465502234,
+  "cand_recall_pos": 0.026412759943409806,
+  "cand_f1_pos": 0.037962989132612236,
+  "cand_macro_f1": 0.022128872927083133,
+  "cand_logloss": 0.047886600913419376
+ },
+ "student_test": {
+  "obs_top1": 0.5450222106088319,
+  "obs_macro_f1_trip": 0.36578168288611185,
+  "obs_weighted_f1_trip": 0.6678686263074387,
+  "obs_top1_trip_mean": 0.5664319937079925,
+  "obs_logloss": 1.0819288748746547,
+  "miss_rate": 0.0007316435850536207,
+  "n_obs": 19135,
+  "cand_precision_pos": 0.32873696639782257,
+  "cand_recall_pos": 0.859055488729669,
+  "cand_f1_pos": 0.4755094951366373,
+  "cand_macro_f1": 0.6735406770384587,
+  "cand_logloss": 0.5294990782481602,
+  "route_continuity": 0.8049544539313219,
+  "infer_time_s": 0.10201096534729004
+ }
+}
