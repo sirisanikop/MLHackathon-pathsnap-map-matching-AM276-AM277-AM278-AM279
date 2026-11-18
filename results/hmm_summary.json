@@ -1,0 +1,15 @@
+{
+ "selected_model": "lgbm_tuned",
+ "best_params": {
+  "beta": 20.0,
+  "w_emit": 0.25,
+  "gap_s": 60.0,
+  "gap_m": 1500.0,
+  "v_max": 60.0,
+  "back_tol_m": 15.0,
+  "back_pen_m": 60.0,
+  "sp_limit_m": 3000.0
+ },
+ "grid_selected_on": "training OOF (80 trips)",
+ "wall_time_s": 16.775236129760742
+}

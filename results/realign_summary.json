@@ -1,0 +1,47 @@
+{
+ "model": "lgbm_tuned",
+ "hmm_params": {
+  "beta": 20.0,
+  "w_emit": 0.25
+ },
+ "train": {
+  "cls": {
+   "top1": 0.9029933361994841,
+   "macro_f1": 0.853887779872179,
+   "continuity": 0.9433881026494089
+  },
+  "hmm": {
+   "top1": 0.9376880911435942,
+   "macro_f1": 0.922534300589553,
+   "continuity": 0.9731224125212954
+  },
+  "realign": {
+   "top1": 0.9572334479793637,
+   "macro_f1": 0.9531796649443015,
+   "continuity": 0.9729123545495033
+  },
+  "trips_realign_worse_top1": 7,
+  "trips_realign_better_top1": 71,
+  "route_f1": 0.9728881706098965
+ },
+ "student_test": {
+  "cls": {
+   "top1": 0.9105304415991639,
+   "macro_f1": 0.862894443291383,
+   "continuity": 0.9516717214204947
+  },
+  "hmm": {
+   "top1": 0.9523386464593676,
+   "macro_f1": 0.9408890755533523,
+   "continuity": 0.979917432395608
+  },
+  "realign": {
+   "top1": 0.9747060360595767,
+   "macro_f1": 0.9700352911178317,
+   "continuity": 0.9788447489395846
+  },
+  "trips_realign_worse_top1": 0,
+  "trips_realign_better_top1": 10,
+  "route_f1": 0.9895462940169919
+ }
+}

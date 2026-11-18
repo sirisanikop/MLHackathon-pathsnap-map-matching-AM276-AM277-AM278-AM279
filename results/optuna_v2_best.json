@@ -1,0 +1,62 @@
+{
+ "objective_family": "lambdarank",
+ "best_params": {
+  "n_estimators": 450,
+  "learning_rate": 0.05718522905441683,
+  "num_leaves": 21,
+  "min_child_samples": 88,
+  "subsample": 0.5766391900018122,
+  "colsample_bytree": 0.34837760913912247,
+  "reg_lambda": 1.0826469155175105,
+  "reg_alpha": 1.4598082220859672,
+  "lambdarank_truncation_level": 7,
+  "subsample_freq": 1
+ },
+ "best_cv_top1": 0.9162809419343825,
+ "best_trial": 36,
+ "n_trials": 40,
+ "sampler": "TPE (multivariate, seed 42, 10 startup trials)",
+ "objective": "mean 5-fold trip-grouped CV observation top-1 (training trips only)",
+ "search_space": {
+  "n_estimators": "int [100, 600] step 50",
+  "learning_rate": "log-uniform [0.01, 0.2]",
+  "num_leaves": "int [15, 127] (log)",
+  "min_child_samples": "int [10, 400] (log)",
+  "subsample": "uniform [0.5, 1.0]",
+  "colsample_bytree": "uniform [0.3, 1.0]",
+  "reg_lambda": "log-uniform [1e-3, 10]",
+  "reg_alpha": "log-uniform [1e-3, 10]",
+  "lambdarank_truncation_level": "int [1, 12]"
+ },
+ "search_train_stride": 9,
+ "untuned_same_protocol": {
+  "params": {
+   "n_estimators": 400,
+   "learning_rate": 0.03704835800688855,
+   "num_leaves": 39,
+   "min_child_samples": 29,
+   "subsample": 0.5011582138173765,
+   "colsample_bytree": 0.49703041033104195,
+   "reg_lambda": 0.0018572637301708756,
+   "reg_alpha": 0.064742963320139,
+   "subsample_freq": 1
+  },
+  "cv_top1": 0.9144497481433623,
+  "cv_macro_f1": 0.8924122632699112
+ },
+ "wall_time_s": 1143.0585091114044,
+ "promoted_params": {
+  "colsample_bytree": 0.3018039885328299,
+  "lambdarank_truncation_level": 7,
+  "learning_rate": 0.06486625503164778,
+  "min_child_samples": 39,
+  "n_estimators": 450,
+  "num_leaves": 31,
+  "reg_alpha": 2.0575097393708814,
+  "reg_lambda": 0.33521032012054774,
+  "subsample": 0.5605218060908236,
+  "subsample_freq": 1
+ },
+ "promoted_trial": 16,
+ "promoted_full_cv_top1": 0.9202721137560272
+}

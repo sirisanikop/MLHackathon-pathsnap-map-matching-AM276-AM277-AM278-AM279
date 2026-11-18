@@ -1,0 +1,29 @@
+{
+ "model": "lgbm_v2_untuned",
+ "best_params": {
+  "beta": 5.675597199722626,
+  "w_emit": 0.059264072176108795,
+  "back_tol_m": 27.156336041831413,
+  "back_pen_m": 95.13553923256025,
+  "uturn_pen": 7.847080225686701,
+  "gap_s": 225.30737147741436,
+  "top_m": 12,
+  "realign_max_m": 78.76744750672849
+ },
+ "best_oof_final_top1": 0.9683630696474634,
+ "round1_setting": {
+  "beta": 20.0,
+  "w_emit": 0.25,
+  "back_tol_m": 15.0,
+  "back_pen_m": 60.0,
+  "uturn_pen": 0.0,
+  "gap_s": 60.0,
+  "top_m": 24,
+  "realign_max_m": 80.0
+ },
+ "round1_oof_final_top1": 0.964945184866724,
+ "n_trials": 64,
+ "sampler": "Optuna TPE (multivariate, seed 42, 16 startup trials), batches of 8",
+ "objective": "pooled final observation top-1 on 80 training trips (OOF classifier scores)",
+ "wall_time_s": 282.5466070175171
+}

@@ -1,0 +1,16 @@
+{
+ "selected": "lgbm_v2_untuned",
+ "reason": "CV top-1 tie (<0.001); untuned has the smaller train-validation gap",
+ "cv_top1": {
+  "untuned": 0.9196056759361152,
+  "tuned": 0.9202721137560272
+ },
+ "cv_macro_f1": {
+  "untuned": 0.8954066289845475,
+  "tuned": 0.8980828105348622
+ },
+ "train_val_gap": {
+  "untuned": 0.06099550760917738,
+  "tuned": 0.06163326722397455
+ }
+}

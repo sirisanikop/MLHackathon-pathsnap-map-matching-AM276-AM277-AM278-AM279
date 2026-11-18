@@ -1,0 +1,88 @@
+{
+ "bootstrap_resamples": 10000,
+ "train_oof": {
+  "n_trips": 80,
+  "n_fixes": 186080,
+  "round1_final_top1": {
+   "point": 0.9572334479793637,
+   "ci95": [
+    0.9334399911235132,
+    0.9735907457855846
+   ]
+  },
+  "final_top1": {
+   "point": 0.9651816423043852,
+   "ci95": [
+    0.9459675945272528,
+    0.9798059263870376
+   ]
+  },
+  "difference": {
+   "point": 0.007948194325021496,
+   "ci95": [
+    0.0030723151944360093,
+    0.014663188137306965
+   ],
+   "prob_improvement": 0.9998
+  },
+  "trips_better": 43,
+  "trips_worse": 13,
+  "trips_equal": 24,
+  "worst_trip_final": {
+   "trip": "00000033",
+   "top1": 0.541501976284585
+  }
+ },
+ "student_test": {
+  "n_trips": 10,
+  "n_fixes": 19135,
+  "round1_final_top1": {
+   "point": 0.9747060360595767,
+   "ci95": [
+    0.9601724057220171,
+    0.9869120191428328
+   ]
+  },
+  "final_top1": {
+   "point": 0.9807682257643062,
+   "ci95": [
+    0.9674608819345661,
+    0.991681526715834
+   ]
+  },
+  "difference": {
+   "point": 0.006062189704729553,
+   "ci95": [
+    0.0029885187177476264,
+    0.00830422711022102
+   ],
+   "prob_improvement": 1.0
+  },
+  "trips_better": 7,
+  "trips_worse": 0,
+  "trips_equal": 3,
+  "worst_trip_final": {
+   "trip": "00000009",
+   "top1": 0.9418493803622497
+  }
+ },
+ "label_sensitivity_student_test": {
+  "labels_changed_by_direction_term": 401,
+  "scored_fixes_geometry_only": 19135,
+  "scored_fixes_direction_aware": 19135,
+  "round1_final_top1": {
+   "geometry_only_labels": 0.9747060360595767,
+   "direction_aware_labels": 0.9601254246145806
+  },
+  "final_top1": {
+   "geometry_only_labels": 0.9807682257643062,
+   "direction_aware_labels": 0.9651946694538803
+  }
+ },
+ "independent_recomputation": {
+  "final_top1_from_pipeline": 0.9807682257643062,
+  "final_top1_from_tuning_csv": 0.9807682257643062,
+  "match": true
+ },
+ "predictions_identical_without_route_files": true
+}

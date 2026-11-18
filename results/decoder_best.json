@@ -1,0 +1,41 @@
+{
+ "model": "lgbm_v2_untuned",
+ "best_params": {
+  "beta": 6.441931752094279,
+  "w_emit": 0.23740410184768843,
+  "back_tol_m": 36.946869024200026,
+  "back_pen_m": 136.14759116522796,
+  "uturn_pen": 4.763130000047359,
+  "gap_s": 283.1115499396612,
+  "top_m": 8,
+  "realign_max_m": 97.27292274370694
+ },
+ "best_tuning_trip_mean_top1": 0.9650320857699305,
+ "round1_setting": {
+  "beta": 20.0,
+  "w_emit": 0.25,
+  "back_tol_m": 15.0,
+  "back_pen_m": 60.0,
+  "uturn_pen": 0.0,
+  "gap_s": 60.0,
+  "top_m": 24,
+  "realign_max_m": 80.0
+ },
+ "round1_tuning_trip_mean_top1": 0.9627715249206819,
+ "n_trials": 64,
+ "adopted": false,
+ "selected_params": {
+  "beta": 20.0,
+  "w_emit": 0.25,
+  "back_tol_m": 15.0,
+  "back_pen_m": 60.0,
+  "uturn_pen": 0.0,
+  "gap_s": 60.0,
+  "top_m": 24,
+  "realign_max_m": 80.0
+ },
+ "adoption_rule": "tuned replaces round-1 only if on the 16 held-out training trips (fold 4) mean per-trip final top-1 improves and mean per-trip macro-F1 does not decrease",
+ "sampler": "Optuna TPE (multivariate, seed 42, 16 startup trials), batches of 8",
+ "objective": "mean per-trip final top-1 on the 64 training trips of folds 0-3 (OOF scorer scores)",
+ "wall_time_s": 345.4739010334015
+}

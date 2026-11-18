@@ -1,0 +1,36 @@
+{
+ "best_params": {
+  "n_estimators": 400,
+  "learning_rate": 0.03704835800688855,
+  "num_leaves": 39,
+  "min_child_samples": 29,
+  "subsample": 0.5011582138173765,
+  "colsample_bytree": 0.49703041033104195,
+  "reg_lambda": 0.0018572637301708756,
+  "reg_alpha": 0.064742963320139,
+  "subsample_freq": 1
+ },
+ "best_cv_top1": 0.9050927061128086,
+ "best_trial": 16,
+ "n_trials": 40,
+ "sampler": "TPE (multivariate, seed 42, 8 startup trials)",
+ "objective": "mean 5-fold trip-grouped CV observation top-1 accuracy",
+ "search_space": {
+  "n_estimators": "int [100, 800] step 50",
+  "learning_rate": "log-uniform [0.01, 0.2]",
+  "num_leaves": "int [15, 255] (log)",
+  "min_child_samples": "int [10, 400] (log)",
+  "subsample": "uniform [0.5, 1.0]",
+  "colsample_bytree": "uniform [0.4, 1.0]",
+  "reg_lambda": "log-uniform [1e-3, 10]",
+  "reg_alpha": "log-uniform [1e-3, 10]"
+ },
+ "search_train_stride": 6,
+ "untuned_same_protocol": {
+  "cv_top1": 0.9037398854150756,
+  "cv_top1_std": 0.025454303937958722,
+  "cv_macro_f1": 0.8654475012872804,
+  "cv_cand_logloss": 0.059424793197791516
+ },
+ "wall_time_s": 1117.0891509056091
+}

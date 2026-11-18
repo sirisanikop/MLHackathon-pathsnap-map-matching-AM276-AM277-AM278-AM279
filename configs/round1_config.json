@@ -1,0 +1,13 @@
+{
+ "model": "lgbm_tuned",
+ "hmm_params": {
+  "beta": 20.0,
+  "w_emit": 0.25
+ },
+ "selection": {
+  "model": "best CV macro-F1/top-1 + log loss among six families (results/comparison_table.csv); Optuna TPE config (results/optuna_best.json)",
+  "hmm": "grid on training-trip OOF scores (results/hmm_grid.csv)",
+  "realign": "monotone re-alignment of fixes to the predicted route; kept because it raised training-trip OOF top-1 0.9377 -> 0.9572 (results/realign_summary.json)"
+ },
+ "realign": true
+}
