@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PathSnap Evaluator</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+  :root { --fg:#111; --bg:#fff; --mut:#666; --line:#ddd; --acc:#1f4fd1; --ok:#137a3a; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color:var(--fg); background:var(--bg); }
+  header { padding:14px 20px; border-bottom:1px solid var(--line); display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:20px; margin:0; letter-spacing:.3px; }
+  header .sub { color:var(--mut); font-size:13px; }
+  .api { margin-left:auto; display:flex; gap:6px; align-items:center; font-size:13px; }
+  .api input { width:260px; padding:6px 8px; border:1px solid #bbb; border-radius:4px; font-family:monospace; }
+  button { padding:7px 12px; border:1px solid #111; background:#111; color:#fff; border-radius:4px; cursor:pointer; font-size:13px; }
+  button.ghost { background:#fff; color:#111; }
+  button:disabled { opacity:.45; cursor:default; }
+  main { display:grid; grid-template-columns: 300px 1fr; min-height: calc(100vh - 62px); }
+  aside { border-right:1px solid var(--line); padding:14px; overflow:auto; }
+  aside h2, section h2 { font-size:13px; text-transform:uppercase; letter-spacing:.8px; color:var(--mut); margin:4px 0 10px; }
+  .trips { display:grid; grid-template-columns: 1fr 1fr; gap:6px; }
+  .trip { padding:9px 6px; border:1px solid #bbb; border-radius:4px; text-align:center; cursor:pointer; font-family:monospace; font-size:14px; background:#fff; color:#111; }
+  .trip.sel { border-color:#111; background:#111; color:#fff; }
+  #status { margin-top:12px; font-size:12px; color:var(--mut); min-height:18px; }
+  section.right { display:grid; grid-template-rows: minmax(380px, 1fr) auto; }
+  #map { width:100%; height:100%; min-height:380px; }
+  .panel { padding:14px 18px; border-top:1px solid var(--line); display:grid; grid-template-columns: 1.2fr 1fr; gap:24px; }
+  table { border-collapse:collapse; width:100%; font-size:13px; }
+  td, th { padding:5px 6px; border-bottom:1px solid #eee; text-align:left; }
+  td.num { text-align:right; font-variant-numeric: tabular-nums; font-family:monospace; }
+  .big { font-size:30px; font-weight:700; }
+  .kpis { display:flex; gap:28px; margin-bottom:10px; flex-wrap:wrap; }
+  .kpi .lbl { font-size:12px; color:var(--mut); }
+  .legend { font-size:12px; color:#333; margin-top:8px; }
+  .sw { display:inline-block; width:22px; height:4px; vertical-align:middle; margin-right:5px; }
+  .dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#888; vertical-align:middle; margin-right:5px; }
+  pre { font-size:11px; max-height:180px; overflow:auto; background:#f7f7f7; padding:8px; border:1px solid #eee; }
+  @media (max-width: 800px) { main { grid-template-columns: 1fr; } .panel { grid-template-columns:1fr; } .api input{width:180px;} }
+</style>
+</head>
+<body>
+<header>
+  <h1>PathSnap</h1><span class="sub">Map-matching evaluator console (Laptop 2)</span>
+  <div class="api">
+    <label for="api">API</label><input id="api" placeholder="http://192.168.x.x:8000">
+    <button id="connect" class="ghost">Connect</button>
+  </div>
+</header>
+<main>
+  <aside>
+    <h2>Evaluation trips</h2>
+    <div class="trips" id="trips"><span style="color:#888;font-size:13px">Connect to the API to load trips.</span></div>
+    <div style="margin-top:14px; display:flex; gap:8px;">
+      <button id="run" disabled>Match selected trip</button>
+    </div>
+    <div id="status"></div>
+    <div class="legend">
+      <div><span class="dot"></span>Raw GPS observations</div>
+      <div><span class="sw" style="background:#1f4fd1"></span>Predicted route (classifier + HMM/Viterbi)</div>
+      <div><span class="sw" style="background:#137a3a;height:8px;width:8px;border-radius:50%"></span>Start &nbsp; <span class="sw" style="background:#b00020;height:8px;width:8px;border-radius:50%"></span>End</div>
+    </div>
+  </aside>
+  <section class="right">
+    <div id="map"></div>
+    <div class="panel">
+      <div>
+        <h2>Server-side evaluation</h2>
+        <div class="kpis" id="kpis"></div>
+        <table id="metrics"></table>
+      </div>
+      <div>
+        <h2>Prediction details</h2>
+        <table id="details"></table>
+        <details><summary style="font-size:12px;cursor:pointer;margin-top:8px">Raw API response (truncated)</summary><pre id="raw"></pre></details>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
