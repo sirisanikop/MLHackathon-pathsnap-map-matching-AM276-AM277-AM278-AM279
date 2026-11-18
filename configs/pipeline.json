@@ -1,0 +1,73 @@
+{
+  "projection": "local equirectangular around trip centroid (metres)",
+  "labels": {
+    "method": "monotone route-constrained DP alignment",
+    "offroute_threshold_m": 60.0
+  },
+  "candidates": {
+    "radius_m": 80.0,
+    "max_k": 12,
+    "index_sample_step_m": 10.0
+  },
+  "cv": {
+    "n_folds": 5,
+    "grouping": "trip",
+    "fold_assignment": "results/folds.json",
+    "seed": 42,
+    "train_stride": "every 3rd fix (KNN: every 9th)",
+    "cv_eval_stride": 3
+  },
+  "bayes_opt": {
+    "sampler": "Optuna TPE multivariate",
+    "n_trials": 40,
+    "timeout_s": 2700,
+    "objective": "mean CV observation top-1",
+    "search_train_stride": 6
+  },
+  "hmm": {
+    "grid_beta": [
+      5,
+      10,
+      20,
+      40,
+      80
+    ],
+    "grid_w_emit": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "gap_s": 60,
+    "gap_m": 1500,
+    "v_max_ms": 60,
+    "selected_on": "training OOF scores"
+  },
+  "decoder_post_step": {
+    "realign_to_predicted_route": true,
+    "max_dist_m": 80.0,
+    "selected_on": "training OOF scores (results/realign_summary.json)"
+  },
+  "round2": {
+    "candidates": {
+      "radius_m": 80.0,
+      "max_k": 24,
+      "k_samples": 192
+    },
+    "features": 46,
+    "objective": "lambdarank",
+    "train_stride": 3,
+    "bayes_opt": {
+      "sampler": "Optuna TPE multivariate",
+      "n_trials": 40,
+      "search_train_stride": 9,
+      "promotion": "top-5 trials re-scored at stride 3"
+    },
+    "decoder_tuning": {
+      "sampler": "Optuna TPE",
+      "n_trials": 64,
+      "objective": "mean per-trip final top-1 on folds 0-3",
+      "holdout": "fold 4",
+      "adopted": false
+    }
+  }
+}
